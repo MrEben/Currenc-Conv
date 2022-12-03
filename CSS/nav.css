@@ -1,0 +1,127 @@
+:root {
+  --clr-primary-1: #2c2b2b;
+  --clr-primary-2: #ee3b3b;
+  --clr-primary-3: #f4f2f1;
+  --clr-primary-5: #969696;
+  --clr-primary-6: #eb9b94;
+  --clr-primary-7: #cb856b;
+  --clr-primary-8: #c1c1c1;
+  --clr-primary-9: #edbaa3;
+  --clr-primary-10: #729caf;
+  --clr-white: #fff;
+  --clr-black: #222;
+  --clr-transparent-black: rgb(0, 0, 0, 0.2);
+  --clr-pink: rgb(255, 191, 202);
+  --clr-primary-color: rgb(3, 23, 23);
+  --logo-color: rgb(255, 10, 10);
+  --background: #ebf3eb;
+  --transition: all 400ms ease;
+  --spacing: 0.1rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --container-width-lg: 82%;
+  --container-width-md: 90%;
+}
+.nav-header {
+  color: var(--clr-primary-1);
+  height: 50px;
+  display: flex;
+  gap: 20%;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  list-style: none;
+  font-size: 14px;
+}
+.links a {
+  color: var(--clr-primary-1);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.links a:hover,
+.links a.activepage {
+  color: var(--clr-primary-2);
+}
+.logo-img {
+  width: 6rem;
+}
+.burgerbtn {
+  display: none;
+}
+
+.burgerbtn div {
+  width: 30px;
+  height: 3px;
+  background-color: var(--clr-primary-1);
+  margin: 5px;
+}
+nav input,
+textarea {
+  width: fit-content;
+  height: 40%;
+  background: transparent;
+  resize: none;
+  border-radius: var(--radius);
+  border: 1.5px solid black;
+  padding: 0.8rem;
+  color: var(--clr-black);
+  box-shadow: var(--light-shadow);
+}
+.nav-active {
+  visibility: visible;
+}
+@media (max-width: 1024px) {
+  .nav-header {
+    gap: 5%;
+  }
+  .links {
+    width: 50%;
+  }
+}
+/* ======SMALL SCREENS=== */
+@media screen and (max-width: 620px) {
+  .nav-header {
+    justify-content: space-between;
+  }
+  .links {
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    height: 60vh;
+    background-color: var(--clr-primary-1);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 999;
+    left: -110%;
+    transition: var(--transition);
+  }
+  .links a {
+    color: var(--clr-primary-3);
+  }
+
+  .burgerbtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-active {
+    left: 0;
+  }
+  .hide-nav {
+    left: -100%;
+  }
+  nav input {
+    display: none;
+  }
+}
