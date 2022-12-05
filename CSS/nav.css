@@ -1,13 +1,13 @@
 :root {
-  --clr-primary-1: #2c2b2b;
-  --clr-primary-2: #ee3b3b;
-  --clr-primary-3: #f4f2f1;
-  --clr-primary-5: #969696;
-  --clr-primary-6: #eb9b94;
-  --clr-primary-7: #cb856b;
-  --clr-primary-8: #c1c1c1;
-  --clr-primary-9: #edbaa3;
-  --clr-primary-10: #729caf;
+  --clr-primary-1: #dbfae4;
+  --clr-primary-2: #11a082;
+  --clr-primary-3: #34276d;
+  --clr-primary-4: #69a4a0;
+  --clr-primary-5: #62de93;
+  --clr-primary-6: #7adac9;
+  --clr-primary-7: #b3475c;
+  --clr-primary-8: #2f5c70;
+  --clr-primary-9: #74a43c;
   --clr-white: #fff;
   --clr-black: #222;
   --clr-transparent-black: rgb(0, 0, 0, 0.2);
@@ -27,14 +27,15 @@
   color: var(--clr-primary-1);
   height: 50px;
   display: flex;
-  gap: 20%;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem;
   overflow: hidden;
 }
 .links {
   display: flex;
-  justify-content: space-around;
+  margin-right: 2rem;
+  gap: 2rem;
   width: 30%;
   list-style: none;
   font-size: 14px;
@@ -47,7 +48,7 @@
 }
 .links a:hover,
 .links a.activepage {
-  color: var(--clr-primary-2);
+  color: var(--clr-primary-3);
 }
 .logo-img {
   width: 6rem;
@@ -89,6 +90,7 @@ textarea {
 @media screen and (max-width: 620px) {
   .nav-header {
     justify-content: space-between;
+    padding: 1rem;
   }
   .links {
     position: absolute;
