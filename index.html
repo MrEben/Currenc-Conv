@@ -7,6 +7,7 @@
     <title>Currenc-Conv</title>
     <link rel="stylesheet" href="../CSS/nav.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
   </head>
   <body>
     <header>
@@ -47,15 +48,95 @@
                     <div class="todays-time">
                       <h4>14:32 GMT</h4>
                     </div>
+                    <!-- current date and time obtained  from the javascript -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="converter-about-section"></div>
+          <div class="converter-more-section">
+            <div class="download-app-text">
+              <h1>Download the Busy Convertor App</h1>
+              <h4>
+                Check live rates, get prompt notifications of the latest market
+                news, set rate alerts,etc
+              </h4>
+              <div class="google-play">
+                <img
+                  src="./Images/google_play_en.static.72ea44d7007622c2f7e41dae9df00236.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="app-images">
+              <img src="./Images/phone-img.png" alt="">
+              <img src="./Images/phone-img.png" alt="">
+            </div>
+          </div>
         </div>
       </article>
     </header>
+    <footer>
+      <div className="logo-message">
+        <div class="footer-img">
+          <img src="./images/log.png" alt="" />
+        </div>
+      </div>
+
+      <div className="company-values">
+        <h2>contact us</h2>
+        <ul>
+          <li>
+            <a target="_blank" href=""> locate us at Choco avenue </a>
+          </li>
+          <li>
+            <a target="_blank" href=""> phone +233 65 617 7263 </a>
+          </li>
+          <li>
+            <a target="_blank" href=""> info@busyentertainment.com </a>
+          </li>
+        </ul>
+      </div>
+      <div className="company-footer-links">
+        <h2>permalinks</h2>
+        <ul>
+          <li>
+            <a target="_blank" href=""> busy access </a>
+          </li>
+          <li>
+            <a target="_blank" href=""> my account </a>
+          </li>
+          <li>
+            <a target="_blank" href=""> get artifacts </a>
+          </li>
+        </ul>
+      </div>
+      <div className="newsleter-sec">
+        <h2>newsletter</h2>
+        <h5>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores optio
+          enim fuga amet!
+        </h5>
+        <form onClick="{subscribe}">
+          <input
+            className="user-email"
+            type="text"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+    <div className="footer-copyrights">
+      <div class="top">
+        <h5>
+          copyright &copy;2022 all rights reserved..this template was built by
+          <span> ebenezer</span>
+        </h5>
+      </div>
+    </div>
     <script type="module" src="./JS/script.js"></script>
   </body>
 </html>

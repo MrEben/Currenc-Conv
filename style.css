@@ -143,16 +143,16 @@ header article {
 }
 .ontop {
   width: 87%;
-  height: 130vh;
-  background: white;
+  height: fit-content;
+  background: var(--clr-white);
   margin: auto;
   margin-top: 5%;
   display: grid;
-  grid-template-rows: 70% 30%;
   border-radius: var(--radius);
-  opacity: 80%;
+  opacity: 95%;
 }
 .converter-main-container {
+  width: fit-content;
   background: var(--clr-primary-2);
   border-radius: var(--radius);
 }
@@ -173,7 +173,26 @@ header article {
   color: var(--clr-primary-1);
   padding: 0.5rem;
 }
-
+/* =========DOWNLOAD APP SECTION============ */
+.converter-more-section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 1rem;
+}
+.download-app-text h1 {
+  font-weight: 600;
+  font-size: 2.1em;
+}
+.download-app-text .google-play {
+  margin-top: 1rem;
+  width: 7rem;
+}
+.app-images {
+  margin-left: 25%;
+  display: flex;
+  gap: 3rem;
+  width: 20%;
+}
 /* ====MEDIUM SCREENS==== */
 @media screen and (max-width: 1024px) {
   body {
@@ -184,15 +203,38 @@ header article {
     font-size: 0.9rem;
     text-align: center;
   }
+  .app-images {
+    margin-left: 8%;
+    width: 40%;
+  }
 }
 @media screen and (max-width: 620px) {
   .ontop {
-    margin-top: 7vh;
+    width: 93%;
+    margin-top: 5vh;
   }
   .main-heading-section {
     padding: 1.2rem;
   }
   .heading-title {
     grid-template-columns: 1fr;
+  }
+  .heading-title h1 {
+    font-size: 2.2rem;
+  }
+  .obn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.75rem;
+  }
+  .converter-more-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .download-app-text h1 {
+    font-size: 1.8em;
+  }
+  .app-images {
+    margin-left: 0;
+    width: 40%;
   }
 }
