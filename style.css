@@ -147,7 +147,8 @@ header article {
   background: var(--clr-white);
   margin: auto;
   margin-top: 5%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius);
   opacity: 95%;
 }
